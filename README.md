@@ -1,4 +1,4 @@
-# 📈 CryptoStream - Monitoramento Financeiro via gRPC
+# Monitoramento Financeiro via gRPC
 
 Projeto desenvolvido para a disciplina de Sistemas Distribuídos.
 O objetivo é demonstrar a comunicação eficiente entre microsserviços utilizando **gRPC (Google Remote Procedure Call)** e **Streaming de Dados** entre linguagens diferentes.
@@ -10,7 +10,7 @@ O objetivo é demonstrar a comunicação eficiente entre microsserviços utiliza
 * **Cliente:** Node.js (Consome o stream e exibe no terminal formatado).
 * **Contrato:** `cotacao.proto` (Define a estrutura dos dados binários).
 
-## 🚀 Como Rodar o Projeto
+## Como Rodar o Projeto
 
 ### Pré-requisitos
 * Python 3.x
