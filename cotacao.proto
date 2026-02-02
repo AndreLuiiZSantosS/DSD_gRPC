@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package financeiro;
+
+// Definição do Serviço
+service BolsaValores {
+  // A palavra 'stream' aqui é o segredo.
+  // Significa: "Cliente pede uma vez, Servidor responde para sempre".
+  rpc MonitorarPrecos (Empty) returns (stream Cotacao) {}
+}
+
+// Mensagem vazia de entrada (o cliente só conecta, não precisa mandar dados)
+message Empty {}
+
+// O formato da resposta
+message Cotacao {
+  string moeda = 1;
+  double valor = 2;
+  string timestamp = 3;
+}
